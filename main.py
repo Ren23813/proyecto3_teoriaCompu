@@ -1,7 +1,7 @@
 #[ "", [ "", "", ""], "", [ "", "", ""], [ "", "", ""]],
 import json
 
-with open("turing.json", "r",encoding="utf-8") as archivo: 
+with open("turing.json", "r",encoding="utf-8") as archivo: #en turing2, la diferencia está en q4 y q5
     turingEncriptar = json.load(archivo)
     
 estados = turingEncriptar['estados']
@@ -14,7 +14,7 @@ reglas = turingEncriptar['reglas']
 
 print("Bienvenido :D")
 key = "10"
-cadena = "HOLA_MUNDO"
+cadena = "HOLA_MUNDO" #HOLA_MUNDO = QYUK_VEWNY
 
 cinta1 = ["?"]
 cinta2 = ["?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?", "?","?", "?", "?", "?","?", "?","?", "?","?", "?","?", "?"]
